@@ -1,5 +1,6 @@
 # Pictoro.Oscuro
 "Pictoro.Oscuro" is a digital portfolio that showcases my work in both digital and analog photography.
+![screencapture-localhost-5500-2024-08-14-23_10_03](https://github.com/user-attachments/assets/4b327aec-87c6-4911-acfc-73a2b292fb85)
 
 This platform serves as a live, self-managed digital workbook, designed with a minimalist approach to ensure that the focus remains on the photographs themselves.
 
