@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictoro.Oscuro Logo</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Jersey+25+Charted&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Jersey+25+Charted&family=Silkscreen:wght@400;700&display=swap');
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent; /* Ensure transparency */
+        }
+
+        .container {
+            position: fixed; /* Absolute positioning */
+            top: 0; /* Align to the top of the viewport */
+            left: 0; /* Align to the left of the viewport */
+            padding: 2px; /* Adjust padding to move the logo closer to the corner */
+            text-align: left; /* Align text to the left */
+            z-index: 155552;
+            
+            transform-origin: top left;
+            transition: transform 1.5s, top 1.5s, left 1.5s; /* Smooth transition for position */
+        }
+
+        .cinzel-title, .cinzel-tagline {
+            font-family: "Cinzel Decorative", serif;
+            color: #ffffff;
+            text-shadow: 
+                0 0 2px #e51740,
+                0 0 4px #DC143C;
+            white-space: nowrap;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 3;
+        }
+
+        .cinzel-title {
+            font-weight: 600;
+            font-size: 42px;
+            font-style: italic;
+            animation: subtlePulse 2s infinite;
+        }
+
+        .cinzel-tagline {
+            font-weight: 400;
+            font-size: 18px;
+            font-style: italic;
+            animation: subtlePulse 2s infinite;
+            font-family: "Cinzel", serif;
+        }
+
+        .cinzel-title:hover, .cinzel-tagline:hover {
+            color: #5a0000;
+            text-shadow: 
+                0 0 17px #ff3333,
+                0 0 10px #ff3333,
+                0 0 21px #ff3333,
+                0 0 42px #DC143C,
+                0 0 82px #DC143C,
+                0 0 92px #DC143C,
+                0 0 102px #DC143C,
+                0 0 151px #DC143C;
+        }
+
+        @keyframes subtlePulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.9; }
+        }
+
+        @media (max-width: 600px) {
+            .cinzel-title {
+                font-size: 40px;
+            }
+            .cinzel-tagline {
+                font-size: 28px;
+            }
+        }
+
+        /* Style for half-size logo */
+        body.half-size .container {
+            transform: scale(0.5); /* Half the size */
+            top: -1000; /* Keep aligned to the top */
+            left: -1000; /* Keep aligned to the left */
+            padding: 10px; /* Adjust padding to maintain positioning */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cinzel-title">Pictoro.Oscuro</div>
+        <div class="cinzel-tagline">Ligo Lux ad Umbras</div>
+    </div>
+</body>
+</html>

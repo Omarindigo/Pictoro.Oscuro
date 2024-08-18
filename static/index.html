@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictoro.Oscuro</title>
+    <link rel="stylesheet" href="/styles/splash.css">
+    <link rel="stylesheet" href="/styles/main.css">
+    <!-- SocketIO script for live reloading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script type="text/javascript">
+        var socket = io('/reload');
+        socket.on('reload', function() {
+            window.location.reload();
+        });
+    </script>
+</head>
+<body>
+  
+    <!-- Embed the logo.html using an iframe -->
+    <iframe src="/logo" style="border: none; position: fixed; top: 20px; left: 20px; width: 410px; height: auto; background-color: transparent; pointer-events: auto; z-index: 100000; padding: 5px;"></iframe>
+
+    <!-- Landing Page Content -->
+
+    <div class="film-strip"></div>
+
+    <div id="landing-page">
+        <div class="circle-container">
+            <!-- Half Circles -->
+            <div class="half-circle-group">
+                <div class="half-circle left"></div>
+                <div class="half-circle right"></div>
+            </div>
+            
+            <!-- Semi Circles with Cutouts -->
+            <div class="semi-circle-group">
+                <div class="semi-circle left">
+                    <div class="cutout-circle" style="top: 20%; left: 65%;"></div>
+                    <div class="cutout-circle" style="bottom: 20%; left: 65%;"></div>
+                </div>
+                <div class="semi-circle right">
+                    <div class="cutout-circle" style="top: 20%; right: 65%;"></div>
+                    <div class="cutout-circle" style="bottom: 20%; right: 65%;"></div>
+                </div>
+            </div>
+            
+            <!-- Central Image with Border -->
+            <div class="cutout-square">
+                <div class="border-square"></div>
+                <img src="/image.jpg" alt="Cut-out Image">
+            </div>
+            
+            <!-- Bottom Rectangle -->
+            <div class="bottom-rectangle"></div>
+            
+            <!-- Centered Circle -->
+            <div class="circle"></div>
+        </div>
+    </div>
+
+    <!-- Main Application Content (Initially Hidden) -->
+    <div id="main-application" style="display:none;">
+  
+      
+        <header id="main-header" class="expanded">
+            <div class="logo-container" id="logo-toggle">
+                <div class="cinzel-title">Pictoro.Oscuro</div>
+                <div class="cinzel-tagline">Ligo Lux ad Umbras</div>
+            </div>
+            <div class="collapsible-content show" id="collapsible-content">
+                <div class="nav-bar">
+                    <div class="nav-tabs">
+                        <button class="tab" data-series="portraits">Portraits</button>
+                        <button class="tab" data-series="environments">Environments</button>
+                        <button class="tab" data-series="abstract">Abstract</button>
+                    </div>
+                    <div class="nav-controls">
+                        <button id="prev" class="nav-button">Prev</button>
+                        <button id="next" class="nav-button">Next</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+        <!-- Image Slider -->
+        <main>
+            <div class="slider">
+                <img id="photo" src="" alt="Photo Slider" class="fade-in">
+            </div>
+        </main>
+    
+    
+
+        <!-- Carousel Section -->
+        <div class="carousel-wrapper" id="carouselWrapper">
+            <button class="toggle-button" id="toggleButton">&#10050;</button>
+            <button class="carousel-button" id="carouselPrev">&#9650;</button>
+            <div class="carousel-container">
+                <div class="carousel" id="carousel">
+                    <!-- Images will be dynamically added here -->
+                </div>
+            </div>
+            <button class="carousel-button" id="carouselNext">&#9660;</button>
+        </div>   
+
+    </div>
+
+    <!-- External Scripts -->
+    <script src="/js/splash_loader.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
