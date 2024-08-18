@@ -1,0 +1,12 @@
+{
+    "images": [
+      {"url": "static/images/abstract/abstract1.jpg"},
+      {"url": "static/images/abstract/abstract2.jpg"},
+      {"url": "static/images/abstract/abstract3.jpg"},
+      {"url": "static/images/abstract/abstract4.jpg"},
+      {"url": "static/images/abstract/abstract5.jpg"},
+      {"url": "static/images/abstract/abstract6.jpg"},
+      {"url": "static/images/abstract/abstract7.jpg"},
+      {"url": "static/images/abstract/abstract8.jpg"}
+    ]
+  }

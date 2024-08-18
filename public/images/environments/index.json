@@ -1,0 +1,12 @@
+{
+    "images": [
+      {"url": "static/images/environments/environment1.jpg"},
+      {"url": "static/images/environments/environment2.jpg"},
+      {"url": "static/images/environments/environment3.jpg"},
+      {"url": "static/images/environments/environment4.jpg"},
+      {"url": "static/images/environments/environment5.jpg"},
+      {"url": "static/images/environments/environment6.jpg"},
+      {"url": "static/images/environments/environment7.jpg"},
+      {"url": "static/images/environments/environment8.jpg"}
+    ]
+  }

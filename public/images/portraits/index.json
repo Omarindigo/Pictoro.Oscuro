@@ -1,0 +1,12 @@
+{
+    "images": [
+      {"url": "static/images/portraits/portrait1.jpg"},
+      {"url": "static/images/portraits/portrait2.jpg"},
+      {"url": "static/images/portraits/portrait3.jpg"},
+      {"url": "static/images/portraits/portrait4.jpg"},
+      {"url": "static/images/portraits/portrait5.jpg"},
+      {"url": "static/images/portraits/portrait6.jpg"},
+      {"url": "static/images/portraits/portrait7.jpg"},
+      {"url": "static/images/portraits/portrait8.jpg"}
+    ]
+  }
